@@ -7,6 +7,7 @@
 [![🚀 Dependency Update and Vulnerability Scan](https://github.com/Jagoda11/angular-template/actions/workflows/%E2%AC%86%EF%B8%8Fnpm-upgrade.yml/badge.svg)](https://github.com/Jagoda11/angular-template/actions/workflows/%E2%AC%86%EF%B8%8Fnpm-upgrade.yml)
 [![CI](https://github.com/Jagoda11/angular-template/actions/workflows/%F0%9F%9A%80ci.yml/badge.svg)](https://github.com/Jagoda11/angular-template/actions/workflows/%F0%9F%9A%80ci.yml)
 [![Open in Codeflow](https://developer.stackblitz.com/img/open_in_codeflow_small.svg)](https:///pr.new/pr0xr/kofude)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz_small.svg)](https://stackblitz.com/github/pr0xr/kofude)
 
 A starter template for Angular projects with ESLint, Prettier, and custom scripts. This template is designed to help you kickstart your Angular applications with the latest configurations and best practices. 🚀
 
