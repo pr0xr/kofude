@@ -11,6 +11,7 @@
   },
   "scripts": {
     "ng": "ng",
+    "dev": "ng serve",
     "start": "echo '🚀 Starting development server...' && ng serve",
     "build": "echo '🏗️ Building project...' && ng build",
     "watch": "echo '👀 Watching for changes...' && ng build --watch --configuration development",
@@ -21,7 +22,7 @@
     "clean": "echo '🧽 Cleaning up...' && rm -rf ./node_modules ./dist && rm package-lock.json",
     "lint-staged": "lint-staged",
     "docker-clean": "echo '🧹 Cleaning up Docker resources...' && docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker image prune -af && docker volume prune -f && docker network prune -f && docker builder prune -f",
-    "postinstall": "if [ \"$DOCKER\" = \"true\" ]; then npm install typescript@5.5.4 --legacy-peer-deps; fi",
+    "postinstall": "node postinstall.js",
     "generate-tests": "echo '🛠️ Generating missing test files... 📂' && node scripts/generate-tests.js && echo '✅ Test generation complete! 🎉'",
     "generate-docs": "echo '📚 Generating documentation... ✍️' && compodoc -p tsconfig.app.json -d documentation && echo '✅ Documentation generation complete! 🎉'",
     "serve-docs": "echo '🚀 Serving documentation at http://127.0.0.1:8080... 🌐' && compodoc -s -d documentation && echo '🛑 Documentation server stopped.'"
@@ -44,6 +45,7 @@
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
+    "deno": "^2.2.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.0"
