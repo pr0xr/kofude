@@ -1,0 +1,6 @@
+<div *ngIf="page">
+  <h1>{{ page.title }}</h1>
+  <p><em>Last modified by {{ page.author }} on {{ page.lastModified | date }}</em></p>
+  <div [innerHTML]="page.content"></div>
+  <a [routerLink]="['/edit', page.id]">Edit this page</a>
+</div>
