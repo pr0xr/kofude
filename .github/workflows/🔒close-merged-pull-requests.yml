@@ -17,7 +17,7 @@ jobs:
         run: echo "::add-mask::${{ secrets.GITHUB_TOKEN }}"
 
       - name: Close linked issues
-        uses: actions/github-script@v5
+        uses: actions/github-script@v7
         with:
           script: |
             const pull_request = context.payload.pull_request;
