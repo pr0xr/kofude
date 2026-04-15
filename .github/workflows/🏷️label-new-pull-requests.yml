@@ -15,7 +15,7 @@ jobs:
         run: echo "::add-mask::${{ secrets.GITHUB_TOKEN }}"
 
       - name: Add label to new pull request 🏷️
-        uses: actions/github-script@v5
+        uses: actions/github-script@v9
         with:
           script: |
             const pr_number = context.payload.pull_request.number;
